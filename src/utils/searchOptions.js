@@ -25,7 +25,7 @@ export const imageOptions = (keyword, offset) => {
     params: { q: keyword, count: '20', offset: offset },
     headers: {
       'X-RapidAPI-Host': 'bing-image-search1.p.rapidapi.com',
-      'X-RapidAPI-Key': 'ed4ae26ac2mshcf2fd8429ee2576p1a8188jsn0a4a2d67a2f0',
+      'X-RapidAPI-Key': process.env.REACT_APP_API_KEY,
     },
   };
 };
@@ -42,7 +42,7 @@ export const TranslateOptions = (query, target, source) => {
     headers: {
       'content-type': 'application/x-www-form-urlencoded',
       'Accept-Encoding': 'application/gzip',
-      'X-RapidAPI-Key': 'ed4ae26ac2mshcf2fd8429ee2576p1a8188jsn0a4a2d67a2f0',
+      'X-RapidAPI-Key': process.env.REACT_APP_API_KEY,
       'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com',
     },
     data: encodedParams,
