@@ -1,0 +1,13 @@
+.cardBox {
+  background-color: inherit;
+  border: none;
+}
+.cardImage {
+  max-height: 12rem;
+  max-width: 24rem;
+  height: auto;
+  width: auto;
+}
+.cardText {
+  font-size: 0.8rem;
+}
